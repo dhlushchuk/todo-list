@@ -29,6 +29,12 @@ const Board: FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.id]);
 
+  useEffect(() => {
+    params.cardId
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [params.cardId]);
+
   const [targetBoard, setTargetBoard] = useState({
     boardId: 0,
   });
