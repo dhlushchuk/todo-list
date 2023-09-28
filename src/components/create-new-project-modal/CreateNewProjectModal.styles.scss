@@ -1,0 +1,22 @@
+@import '../../styles/colors.scss';
+
+.new-project-modal {
+    &-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        min-width: 20rem;
+        color: $primary-color;
+    }
+
+    &-button-wrapper {
+        height: 2.5rem
+    }
+}
+
+@media (max-width: 650px) {
+    .new-project-modal-container {
+        min-width: 15rem;
+    }
+}

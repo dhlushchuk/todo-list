@@ -1,0 +1,80 @@
+@import '../../styles/colors.scss';
+
+.card-info {
+    padding: 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 34rem;
+    overflow: auto;
+    max-height: 75vh;
+
+    &-box-title p {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    &-box-task-checkbox {
+        display: flex;
+        gap: 10px;
+    }
+
+    &-box-task-checkbox input {
+        height: 1rem;
+        width: 1rem;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &-box-task-delete-button {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &-box-task-checkbox p {
+        flex: 1;
+    }
+
+    &-box-task-checkbox .completed {
+        text-decoration-line: line-through;
+    }
+
+    &-box input[type="date"] {
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    &-box-comment {
+        padding: 6px 12px;
+        border-radius: 3px;
+        background-color: #eee;
+        margin-bottom: 1rem;
+
+        & .custom-input-display  {
+            color: $primary-color;
+        }
+
+        &-related {
+            margin-left: 1rem;
+        }
+    }
+
+    &-add-task, &-add-comment {
+        background-color: $primary-color;
+        color: white;
+
+        &:hover {
+            background-color: $primary-color-dark;
+        }
+    }
+}
+  
+@media (max-width: 650px) {
+    .card-info {
+      width: 15rem;
+    }
+}
+  

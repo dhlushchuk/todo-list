@@ -1,0 +1,5 @@
+export const SET_PROJECT = "FETCH_PROJECT";
+export const SET_PROJECT_LIST = "FETCH_PROJECT_SUCCESS";
+export const ADD_PROJECT = "ADD_PROJECT";
+export const REMOVE_PROJECT = "REMOVE_PROJECT";
+export const SET_BOARDS = "SET_BOARDS";

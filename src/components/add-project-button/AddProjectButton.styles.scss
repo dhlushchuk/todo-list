@@ -1,0 +1,12 @@
+.add-project-button {
+  cursor: pointer;
+  
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}

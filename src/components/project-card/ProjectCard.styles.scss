@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+
+.project {
+  &-title {
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  &-description {
+    color: $secondary-color;
+  }
+
+  &-delete-button {
+    opacity: 0;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &-card:hover &-delete-button {
+    opacity: 1;
+  }
+
+  &-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

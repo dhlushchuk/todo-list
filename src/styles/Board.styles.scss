@@ -1,0 +1,39 @@
+@import "../styles/colors.scss";
+
+.tasks-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.tasks-card {
+  display: flex;
+  margin: 3rem;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+.board {
+  padding: 1rem;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &-task {
+    background-color: rgb(243, 246, 249);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 650px) {
+  .tasks-card {
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,14 @@
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+  min-height: 100vh;
+}
+
+@media (max-width: 645px) {
+  .project-container {
+    flex-direction: column;
+  }
+}
